@@ -1,0 +1,18 @@
+{
+  "name": "ya-frontend",
+  "description": "This is a simple example with in-browser compilation.",
+  "main": "app.js",
+  "directory": "public/vendor",
+  "authors": [
+    "Clark Van Oyen <clark@countable.ca>"
+  ],
+  "license": "BSD-2-Clause",
+  "homepage": "",
+  "private": true,
+  "dependencies": {
+    "leaflet": "^0.7.7",
+    "leaflet.markercluster": "leaflet.markerclusterer#^0.5.0",
+    "riot": "^2.3.18",
+    "riot-mui": "*"
+  }
+}

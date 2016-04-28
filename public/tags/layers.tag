@@ -1,37 +1,59 @@
 
 <layers>
 
-  <div class='layer-toggle' onclick={ toggle }>
+  <h3>{ opts.title }</h3>
 
-  </div>
-
-  <ul class='layer-panel' if={ showing }>
-    <li class='layer' each={ wms_layers } onclick={ layer_on_off }>
-      { name } <span if={ map_has_layer(layer) } class='on'>&#x2714;</span>
+  <ul>
+    <li each={ items.filter(whatShow) }>
+      <label class={ completed: done }>
+        <input type="checkbox" checked={ done } onclick={ parent.toggle }> { title }
+      </label>
     </li>
   </ul>
 
-  var controller=this
-    , showing=false;
+  <form onsubmit={ add }>
+    <input name="input" onkeyup={ edit }>
+    <button disabled={ !text }>Add #{ items.filter(whatShow).length + 1 }</button>
 
-  controller.wms_layers = wms_layers;
+    <button disabled={ items.filter(onlyDone).length == 0 } onclick={ removeAllDone }>
+    X{ items.filter(onlyDone).length } </button>
+  </form>
 
-  toggle(){
-    controller.showing = !controller.showing;
-  }
-  
-  map_has_layer(layer){
-    return map.hasLayer(layer);
-  }
+  <!-- this script tag is optional -->
+  <script>
+    this.items = opts.items
 
-  layer_on_off(e){
-    if (map.hasLayer(e.item.layer)) {
-      map.removeLayer(e.item.layer);
+    edit(e) {
+      this.text = e.target.value
     }
-    else{
-      map.addLayer(e.item.layer);
-    }
-  }
 
+    add(e) {
+      if (this.text) {
+        this.items.push({ title: this.text })
+        this.text = this.input.value = ''
+      }
+    }
+
+    removeAllDone(e) {
+      this.items = this.items.filter(function(item) {
+        return !item.done
+      })
+    }
+
+    // an two example how to filter items on the list
+    whatShow(item) {
+      return !item.hidden
+    }
+
+    onlyDone(item) {
+      return item.done
+    }
+
+    toggle(e) {
+      var item = e.item
+      item.done = !item.done
+      return true
+    }
+  </script>
 
 </layers>

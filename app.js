@@ -51,6 +51,7 @@ function select_box(req, res, next){
 
 // Routes
 app.get('/soil/within', select_box);
+<<<<<<< HEAD
 */
 
 app.get(/\/(html|css|vendor|js|tags|fonts|images)\/?.*/, restify.serveStatic({

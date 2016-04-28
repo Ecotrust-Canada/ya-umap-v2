@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:fb="https://www.facebook.com/2008/fbml">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Young Agrarians</title>
+    <meta content="authenticity_token" name="csrf-param" />
+<meta content="qUH3I9I6pIMxdKkf/sUbza8nW9/UKQQ+kKCIm1QFIJU=" name="csrf-token" />
+
+    <meta property="fb:app_id" content="236752999835803" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="YoungAgrarians Resource Map" />
+    <meta property="og:image" content="http://maps.youngagrarians.org//assets/ya.jpg" />
+    <meta property="og:description" content="We are mapping resources relevant to new/young farmers wanting to get into farming and food growing. Our focus is on the ecological/organic (certified or uncertified) sector." />
+    <meta property="og:url" content="http://maps.youngagrarians.org/" />
+
+    <!-- Le HTML5 shim, for IE6-8 support of le HTML elements -->
+    <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.1/html5shiv.js" type="text/javascript"></script>
+    <![endif]-->
+    <link href="/assets/application-4e9edc45ae786125fcdc94d8ca71f7a3.css" media="all" rel="stylesheet" type="text/css" />
+    <script src="/assets/modernizr-27121d45b8557447b3f2f4c1fcd75ed9.js" type="text/javascript"></script>
+
+    <!-- For third-generation iPad with high-resolution Retina display: -->
+    <!-- Size should be 144 x 144 pixels -->
+    <link href="/assets/images/apple-touch-icon-144x144-precomposed.png" rel="apple-touch-icon-precomposed" sizes="144x144" type="image/png" />
+
+    <!-- For iPhone with high-resolution Retina display: -->
+    <!-- Size should be 114 x 114 pixels -->
+    <link href="/assets/images/apple-touch-icon-114x114-precomposed.png" rel="apple-touch-icon-precomposed" sizes="114x114" type="image/png" />
+
+    <!-- For first- and second-generation iPad: -->
+    <!-- Size should be 72 x 72 pixels -->
+    <link href="/assets/images/apple-touch-icon-72x72-precomposed.png" rel="apple-touch-icon-precomposed" sizes="72x72" type="image/png" />
+
+    <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+    <!-- Size should be 57 x 57 pixels -->
+    <link href="/assets/images/apple-touch-icon-precomposed.png" rel="apple-touch-icon-precomposed" type="image/png" />
+
+    <!-- For all other devices -->
+    <!-- Size should be 32 x 32 pixels -->
+    <link href="/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+  </head>
+  <body class="ya">
+    <div id="fb-root"></div>
+    <script>
+      window.fbAsyncInit = function() {
+        // init the FB JS SDK
+        FB.init({
+          appId      : '236752999835803',                        // App ID from the app dashboard
+          status     : false,                                 // Check Facebook Login status
+          xfbml      : false                                  // Look for social plugins on the page
+        });
+
+        // Additional initialization code such as adding Event Listeners goes here
+      };
+
+      // Load the SDK asynchronously
+      (function(){
+         // If we've already installed the SDK, we're done
+         if (document.getElementById('facebook-jssdk')) {return;}
+
+         // Get the first script element, which we'll use to find the parent node
+         var firstScriptElement = document.getElementsByTagName('script')[0];
+
+         // Create a new script element and set its id
+         var facebookJS = document.createElement('script'); 
+         facebookJS.id = 'facebook-jssdk';
+
+         // Set the new script's source to the source of the Facebook JS SDK
+         facebookJS.src = '//connect.facebook.net/en_US/all.js';
+
+         // Insert the Facebook JS SDK into the DOM
+         firstScriptElement.parentNode.insertBefore(facebookJS, firstScriptElement);
+       }());
+    </script>
+
+    <header id="masthead" class="site-header" role="banner">
+  <div class="banner">
+
+    <div class="logo">
+      <a class="home-link" href="http://youngagrarians.org/" title="Young Agrarians" rel="home"></a>
+    </div>
+
+    <div class="social-icons">
+      <div class="search-bar">
+        <form action="http://youngagrarians.org/" method="get">
+          <input type="text" name="s" id="search" placeholder="search YA ..." value="" />
+        </form>         </div>
+        <div class="icons">
+
+          <ul class="social one">   
+           <li><a class='facebook' href='https://www.facebook.com/YoungAgrarians' target='_blank' title='Facebook'></a></li>
+           <li><a class='twitter' href='https://twitter.com/youngagrarians' target='_blank' title='Twitter'></a></li>
+           <li><a class='flickr' href='http://www.flickr.com/groups/youngagrarians/' target='_blank' title='Flickr'></a></li>
+         </ul>
+         <ul class="social two">   
+           <li><a class='instagram' href='http://instagram.com/youngagrarians' target='_blank' title='Instagram'></a></li>
+           <li><a class='google' href='https://plus.google.com/101241945238700436364/posts' target='_blank' title='Google+'></a></li>
+           <li><a class='mail' href='mailto:theyoungagrarians@gmail.com' target='_blank' title='Mail'></a></li>
+         </ul>
+
+       </div>
+     </div> 
+     <div class="top-buttons">
+      <a class="u-map map-tracker" href="http://maps.youngagrarians.org"><p>U-Map<br/><span class="sub">Farm Resources</span></p></a>
+      <a class="sign-up fb_iframe" href="http://youngagrarians.org/mailchimp-pop-up/mailchimp-pop-up.html"><p>Sign Up<br/><span class="sub">For Our Newsletter</span></p></a>
+      <a class="donate" href="index.php?page_id=2440"><p>Donate<br/><span class="sub">Help Us Grow</span></p></a>
+    </div>        
+
+  </div>
+  <div id="navbar" class="navbar">
+    <nav id="site-navigation" class="navigation main-navigation" role="navigation">
+      <h3 class="menu-toggle">Menu</h3>
+      <div class="menu-main-menu-container"><ul id="menu-main-menu" class="nav-menu"><li id="menu-item-29" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29"><a href="http://youngagrarians.org/about/">About</a><span style="display:none;" class="ga-tracking" data-method="_trackEvent" data-category="" data-action="" data-label="" data-value="" data-noninteraction=""></span>
+        <ul class="sub-menu">
+          <li id="menu-item-2382" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2382"><a href="http://youngagrarians.org/about/network/">Network</a><span style="display:none;" class="ga-tracking" data-method="_trackEvent" data-category="" data-action="" data-label="" data-value="" data-noninteraction=""></span></li>
+          <li id="menu-item-2873" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2873"><a href="http://youngagrarians.org/jobs/">Jobs</a><span style="display:none;" class="ga-tracking" data-method="_trackEvent" data-category="" data-action="" data-label="" data-value="" data-noninteraction=""></span></li>
+          <li id="menu-item-2381" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2381"><a href="http://youngagrarians.org/about/funders/">Funders</a><span style="display:none;" class="ga-tracking" data-method="_trackEvent" data-category="" data-action="" data-label="" data-value="" data-noninteraction=""></span></li>
+          <li id="menu-item-2443" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2443"><a href="http://youngagrarians.org/about/donate/">Donate</a><span style="display:none;" class="ga-tracking" data-method="_trackEvent" data-category="" data-action="" data-label="" data-value="" data-noninteraction=""></span></li>
+        </ul>
+      </li>
+      <li id="menu-item-25" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25"><a href="http://youngagrarians.org/events/">Events</a><span style="display:none;" class="ga-tracking" data-method="_trackEvent" data-category="" data-action="" data-label="" data-value="" data-noninteraction=""></span></li>
+      <li id="menu-item-28" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28"><a href="http://youngagrarians.org/tools/">Tools</a><span style="display:none;" class="ga-tracking" data-method="_trackEvent" data-category="" data-action="" data-label="" data-value="" data-noninteraction=""></span>
+        <ul class="sub-menu">
+          <li id="menu-item-2413" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2413"><a href="http://maps.youngagrarians.org/">u-map</a><span style="display:none;" class="ga-tracking" data-method="_trackEvent" data-category="u-map" data-action="click" data-label="menu-item" data-value="" data-noninteraction=""></span></li>
+          <li id="menu-item-5261" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5261"><a href="http://youngagrarians.org/tools/business/">Business</a><span style="display:none;" class="ga-tracking" data-method="_trackEvent" data-category="" data-action="" data-label="" data-value="" data-noninteraction=""></span></li>
+          <li id="menu-item-24" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24"><a href="http://youngagrarians.org/tools/land/">Land</a><span style="display:none;" class="ga-tracking" data-method="_trackEvent" data-category="" data-action="" data-label="" data-value="" data-noninteraction=""></span></li>
+          <li id="menu-item-2873" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2873"><a href="http://youngagrarians.org/jobs/">Jobs</a><span style="display:none;" class="ga-tracking" data-method="_trackEvent" data-category="" data-action="" data-label="" data-value="" data-noninteraction=""></span></li>
+          <li id="menu-item-3011" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3011"><a href="http://youngagrarians.org/survey/">Survey</a><span style="display:none;" class="ga-tracking" data-method="_trackEvent" data-category="" data-action="" data-label="" data-value="" data-noninteraction=""></span></li>
+        </ul>
+      </li>
+      <li id="menu-item-2779" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2779"><a href="http://youngagrarians.org/mediafarm/">Media Farm</a><span style="display:none;" class="ga-tracking" data-method="_trackEvent" data-category="" data-action="" data-label="" data-value="" data-noninteraction=""></span>
+        <ul class="sub-menu">
+          <li id="menu-item-2664" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2664"><a href="http://youngagrarians.org/mediafarm/press/">Press</a><span style="display:none;" class="ga-tracking" data-method="_trackEvent" data-category="" data-action="" data-label="" data-value="" data-noninteraction=""></span></li>
+          <li id="menu-item-2423" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2423"><a href="http://youngagrarians.org/mediafarm/social-media/">Social Media</a><span style="display:none;" class="ga-tracking" data-method="_trackEvent" data-category="" data-action="" data-label="" data-value="" data-noninteraction=""></span></li>
+          <li id="menu-item-2570" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2570"><a href="http://youngagrarians.org/mediafarm/videos/">Video</a><span style="display:none;" class="ga-tracking" data-method="_trackEvent" data-category="" data-action="" data-label="" data-value="" data-noninteraction=""></span></li>
+        </ul>
+      </li>
+      <li id="menu-item-23" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23"><a href="http://youngagrarians.org/contact-us/">Contact Us</a><span style="display:none;" class="ga-tracking" data-method="_trackEvent" data-category="" data-action="" data-label="" data-value="" data-noninteraction=""></span></li>
+    </ul></div>         
+  </nav><!-- #site-navigation -->
+</div><!-- #navbar -->
+    </header><!-- #masthead -->
+
+
+      <div id='map-app-container'>
+  <div class="row collapse">
+    <div class="large-10 columns">
+      <div id="map"></div>
+    </div>
+    <div id="sidebar" class="large-2 columns"></div>
+  </div>
+  <div class='row' id="results"></div>
+</div>
+    <script src="https://maps.googleapis.com/maps/api/js?libraries=places&amp;sensor=false&amp;key=AIzaSyBHgtGfgc3ozIAf7I0ZoL-AYD7oW3NvqKE" type="text/javascript"></script>
+    <script type="text/javascript">
+      var script = '<script type="text/javascript" src="http://google-maps-' + 'utility-library-v3.googlecode.com/svn/trunk/infobubble/src/infobubble';
+      if (document.location.search.indexOf('compiled') !== -1) {
+        script += '-compiled';
+      }
+      script += '.js"><' + '/script>';
+      document.write(script);
+    </script>
+
+    <script src="/assets/application-7ec3a2043fd0f7cfab4cca240820f876.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      // Bootstrap categories and subcategories instead of wasting 2 http requests and avoiding
+      // complication in the UI logic
+      Youngagrarians.categories = [{"created_at":"2013-06-17T09:25:59Z","id":1,"name":"Apprenticeship","updated_at":"2013-06-17T09:25:59Z","subcategories":[{"category_id":1,"created_at":"2013-06-17T09:25:59Z","id":1,"name":"Education","updated_at":"2013-09-28T22:16:38Z"}]},{"created_at":"2013-06-17T09:25:59Z","id":2,"name":"Business","updated_at":"2013-06-17T09:25:59Z","subcategories":[{"category_id":2,"created_at":"2013-06-17T09:25:59Z","id":2,"name":"Farm Business Planning","updated_at":"2013-09-28T22:16:49Z"},{"category_id":2,"created_at":"2013-06-17T09:25:59Z","id":3,"name":"Regulatory","updated_at":"2013-09-28T22:16:38Z"},{"category_id":2,"created_at":"2013-06-17T09:26:02Z","id":6,"name":"Crop Planning","updated_at":"2013-06-17T09:26:02Z"},{"category_id":2,"created_at":"2013-07-26T20:00:06Z","id":59,"name":"Market","updated_at":"2013-07-26T20:00:06Z"},{"category_id":2,"created_at":"2014-01-04T00:29:56Z","id":91,"name":"Training","updated_at":"2014-01-04T00:29:56Z"}]},{"created_at":"2013-06-17T09:26:02Z","id":3,"name":"Education","updated_at":"2013-06-17T09:26:02Z","subcategories":[{"category_id":3,"created_at":"2013-06-17T09:26:02Z","id":7,"name":"University","updated_at":"2013-06-17T09:26:02Z"},{"category_id":3,"created_at":"2013-06-17T09:26:02Z","id":8,"name":"Online","updated_at":"2013-06-17T09:26:02Z"},{"category_id":3,"created_at":"2013-06-17T09:26:02Z","id":9,"name":"Classroom","updated_at":"2013-06-17T09:26:02Z"},{"category_id":3,"created_at":"2013-06-17T09:26:03Z","id":10,"name":"Informal Education","updated_at":"2013-06-17T09:26:03Z"},{"category_id":3,"created_at":"2013-06-17T09:26:03Z","id":11,"name":"Internship","updated_at":"2013-06-17T09:26:03Z"},{"category_id":3,"created_at":"2013-06-17T09:26:03Z","id":12,"name":"Bees","updated_at":"2013-06-17T09:26:03Z"},{"category_id":3,"created_at":"2014-01-04T00:21:40Z","id":81,"name":"College","updated_at":"2014-01-04T00:21:40Z"},{"category_id":3,"created_at":"2014-01-04T00:39:01Z","id":101,"name":"Courses","updated_at":"2014-01-04T00:39:01Z"}]},{"created_at":"2013-06-17T09:26:03Z","id":4,"name":"Event","updated_at":"2013-06-17T09:26:03Z","subcategories":[{"category_id":4,"created_at":"2013-06-17T09:26:03Z","id":13,"name":"Marketing","updated_at":"2013-06-17T09:26:03Z"},{"category_id":4,"created_at":"2013-06-17T09:26:03Z","id":14,"name":"Networking","updated_at":"2013-06-17T09:26:03Z"},{"category_id":4,"created_at":"2013-06-17T09:26:04Z","id":17,"name":"Beef","updated_at":"2013-06-17T09:26:04Z"},{"category_id":4,"created_at":"2013-06-17T09:26:04Z","id":18,"name":"Cows","updated_at":"2013-06-17T09:26:04Z"},{"category_id":4,"created_at":"2013-06-17T09:26:05Z","id":23,"name":"Organics","updated_at":"2013-06-17T09:26:05Z"}]},{"created_at":"2013-06-17T09:26:05Z","id":5,"name":"Farm","updated_at":"2013-06-17T09:26:05Z","subcategories":[{"category_id":5,"created_at":"2013-06-17T09:26:05Z","id":24,"name":"First Nations","updated_at":"2013-06-17T09:26:05Z"},{"category_id":5,"created_at":"2013-06-17T09:26:05Z","id":25,"name":"Young Agrarians","updated_at":"2013-06-17T09:26:05Z"}]},{"created_at":"2013-06-17T09:26:08Z","id":6,"name":"Funding","updated_at":"2013-06-17T09:26:08Z","subcategories":[{"category_id":6,"created_at":"2013-06-17T09:26:08Z","id":26,"name":"Work Subsidy","updated_at":"2013-06-17T09:26:08Z"},{"category_id":6,"created_at":"2013-06-17T09:26:08Z","id":27,"name":"Microfinance","updated_at":"2013-06-17T09:26:08Z"},{"category_id":6,"created_at":"2013-06-17T09:26:08Z","id":28,"name":"Loans","updated_at":"2013-06-17T09:26:08Z"},{"category_id":6,"created_at":"2013-06-17T09:26:09Z","id":29,"name":"Sector Development","updated_at":"2013-06-17T09:26:09Z"},{"category_id":6,"created_at":"2013-06-17T09:26:09Z","id":30,"name":"Grants","updated_at":"2013-06-17T09:26:09Z"}]},{"created_at":"2013-06-17T09:26:10Z","id":7,"name":"Infrastructure","updated_at":"2013-06-17T09:26:10Z","subcategories":[{"category_id":7,"created_at":"2013-06-17T09:26:04Z","id":20,"name":"Livestock","updated_at":"2013-09-28T22:16:27Z"},{"category_id":7,"created_at":"2013-06-17T09:26:10Z","id":31,"name":"Soil Amendments","updated_at":"2013-06-17T09:26:10Z"},{"category_id":7,"created_at":"2013-06-17T09:26:10Z","id":32,"name":"Soil Testing Lab","updated_at":"2013-06-17T09:26:10Z"},{"category_id":7,"created_at":"2013-06-17T09:26:11Z","id":33,"name":"Poultry","updated_at":"2013-06-17T09:26:11Z"},{"category_id":7,"created_at":"2013-06-17T09:26:12Z","id":34,"name":"Processors","updated_at":"2013-06-17T09:26:12Z"},{"category_id":7,"created_at":"2013-06-17T09:26:12Z","id":35,"name":"Grains","updated_at":"2013-06-17T09:26:12Z"},{"category_id":7,"created_at":"2013-06-17T09:26:12Z","id":36,"name":"Wool","updated_at":"2013-06-17T09:26:12Z"},{"category_id":7,"created_at":"2013-06-17T09:26:13Z","id":37,"name":"Slaughter Facility","updated_at":"2013-06-17T09:26:13Z"},{"category_id":7,"created_at":"2013-06-17T09:26:25Z","id":38,"name":"Feed Dealers","updated_at":"2013-06-17T09:26:25Z"},{"category_id":7,"created_at":"2014-01-03T22:36:04Z","id":61,"name":"Suppliers","updated_at":"2014-01-04T00:11:34Z"},{"category_id":7,"created_at":"2014-01-04T00:09:54Z","id":71,"name":"Equipment","updated_at":"2014-01-04T00:09:54Z"}]},{"created_at":"2013-06-17T09:26:30Z","id":8,"name":"Land","updated_at":"2013-06-17T09:26:30Z","subcategories":[{"category_id":8,"created_at":"2013-06-17T09:26:30Z","id":39,"name":"Land Access","updated_at":"2013-06-17T09:26:30Z"},{"category_id":8,"created_at":"2014-01-04T00:48:43Z","id":121,"name":"Cooperative","updated_at":"2014-01-04T00:48:43Z"}]},{"created_at":"2013-06-17T09:26:31Z","id":9,"name":"Organization","updated_at":"2013-06-17T09:26:31Z","subcategories":[{"category_id":9,"created_at":"2013-06-17T09:26:00Z","id":5,"name":"Labour Resource","updated_at":"2013-09-28T22:16:49Z"},{"category_id":9,"created_at":"2013-06-17T09:26:04Z","id":15,"name":"Community","updated_at":"2013-09-28T22:16:48Z"},{"category_id":9,"created_at":"2013-06-17T09:26:04Z","id":16,"name":"Youth","updated_at":"2013-09-28T22:16:20Z"},{"category_id":9,"created_at":"2013-06-17T09:26:04Z","id":19,"name":"Cattle","updated_at":"2013-09-28T22:16:23Z"},{"category_id":9,"created_at":"2013-06-17T09:26:04Z","id":22,"name":"Farmers Market","updated_at":"2013-09-28T22:16:10Z"},{"category_id":9,"created_at":"2013-06-17T09:26:31Z","id":40,"name":"Seed","updated_at":"2013-06-17T09:26:31Z"},{"category_id":9,"created_at":"2013-06-17T09:26:31Z","id":41,"name":"Business Resources","updated_at":"2013-06-17T09:26:31Z"},{"category_id":9,"created_at":"2013-06-17T09:26:31Z","id":42,"name":"Sheep","updated_at":"2013-06-17T09:26:31Z"},{"category_id":9,"created_at":"2013-06-17T09:26:32Z","id":43,"name":"Grain","updated_at":"2013-06-17T09:26:32Z"},{"category_id":9,"created_at":"2013-06-17T09:26:32Z","id":44,"name":"Tree Fruit","updated_at":"2013-06-17T09:26:32Z"},{"category_id":9,"created_at":"2013-06-17T09:26:32Z","id":45,"name":"Food Policy","updated_at":"2013-06-17T09:26:32Z"},{"category_id":9,"created_at":"2013-06-17T09:26:33Z","id":46,"name":"Start up support","updated_at":"2013-06-17T09:26:33Z"},{"category_id":9,"created_at":"2013-06-17T09:26:33Z","id":47,"name":"National","updated_at":"2013-06-17T09:26:33Z"},{"category_id":9,"created_at":"2013-06-17T09:26:34Z","id":48,"name":"Urban Agriculture","updated_at":"2013-06-17T09:26:34Z"},{"category_id":9,"created_at":"2014-01-04T00:46:51Z","id":111,"name":"Agritourism","updated_at":"2014-01-04T00:46:51Z"},{"category_id":9,"created_at":"2014-01-04T01:08:54Z","id":131,"name":"Agroforestry","updated_at":"2014-01-04T01:08:54Z"}]},{"created_at":"2013-06-17T09:26:35Z","id":10,"name":"Publication","updated_at":"2013-06-17T09:26:35Z","subcategories":[{"category_id":10,"created_at":"2013-06-17T09:26:04Z","id":21,"name":"Fruit","updated_at":"2013-09-28T22:16:26Z"},{"category_id":10,"created_at":"2013-06-17T09:26:35Z","id":49,"name":"Organic Sector","updated_at":"2013-06-17T09:26:35Z"},{"category_id":10,"created_at":"2013-06-17T09:26:35Z","id":50,"name":"Berries","updated_at":"2013-06-17T09:26:35Z"},{"category_id":10,"created_at":"2013-06-17T09:26:36Z","id":51,"name":"Farm","updated_at":"2013-06-17T09:26:36Z"},{"category_id":10,"created_at":"2013-06-17T09:26:36Z","id":52,"name":"Foodies","updated_at":"2013-06-17T09:26:36Z"},{"category_id":10,"created_at":"2013-06-17T09:26:36Z","id":53,"name":"Farm Sector","updated_at":"2013-06-17T09:26:36Z"},{"category_id":10,"created_at":"2013-06-17T09:26:36Z","id":54,"name":"Beef and Livestock","updated_at":"2013-06-17T09:26:36Z"},{"category_id":10,"created_at":"2013-06-17T09:26:37Z","id":55,"name":"Mushrooms","updated_at":"2013-06-17T09:26:37Z"}]},{"created_at":"2013-06-17T09:26:37Z","id":11,"name":"Seed","updated_at":"2013-06-17T09:26:37Z","subcategories":[{"category_id":11,"created_at":"2013-06-17T09:26:37Z","id":56,"name":"Events","updated_at":"2013-06-17T09:26:37Z"},{"category_id":11,"created_at":"2013-06-17T09:26:38Z","id":57,"name":"Infrastructure","updated_at":"2013-06-17T09:26:38Z"}]},{"created_at":"2013-06-17T09:26:40Z","id":12,"name":"Web Resource","updated_at":"2013-06-17T09:26:40Z","subcategories":[{"category_id":12,"created_at":"2013-06-17T09:25:59Z","id":4,"name":"Government","updated_at":"2013-09-28T22:16:51Z"},{"category_id":12,"created_at":"2013-06-17T09:26:40Z","id":58,"name":"Information","updated_at":"2013-06-17T09:26:40Z"}]},{"created_at":"2013-07-26T20:01:27Z","id":13,"name":"Market","updated_at":"2013-07-26T20:01:27Z","subcategories":[]},{"created_at":"2014-01-03T22:33:01Z","id":21,"name":"Job","updated_at":"2014-01-03T22:33:01Z","subcategories":[]}];
+      Youngagrarians.subcategories = [{"category_id":1,"created_at":"2013-06-17T09:25:59Z","id":1,"name":"Education","updated_at":"2013-09-28T22:16:38Z"},{"category_id":2,"created_at":"2013-06-17T09:25:59Z","id":2,"name":"Farm Business Planning","updated_at":"2013-09-28T22:16:49Z"},{"category_id":2,"created_at":"2013-06-17T09:25:59Z","id":3,"name":"Regulatory","updated_at":"2013-09-28T22:16:38Z"},{"category_id":12,"created_at":"2013-06-17T09:25:59Z","id":4,"name":"Government","updated_at":"2013-09-28T22:16:51Z"},{"category_id":9,"created_at":"2013-06-17T09:26:00Z","id":5,"name":"Labour Resource","updated_at":"2013-09-28T22:16:49Z"},{"category_id":2,"created_at":"2013-06-17T09:26:02Z","id":6,"name":"Crop Planning","updated_at":"2013-06-17T09:26:02Z"},{"category_id":3,"created_at":"2013-06-17T09:26:02Z","id":7,"name":"University","updated_at":"2013-06-17T09:26:02Z"},{"category_id":3,"created_at":"2013-06-17T09:26:02Z","id":8,"name":"Online","updated_at":"2013-06-17T09:26:02Z"},{"category_id":3,"created_at":"2013-06-17T09:26:02Z","id":9,"name":"Classroom","updated_at":"2013-06-17T09:26:02Z"},{"category_id":3,"created_at":"2013-06-17T09:26:03Z","id":10,"name":"Informal Education","updated_at":"2013-06-17T09:26:03Z"},{"category_id":3,"created_at":"2013-06-17T09:26:03Z","id":11,"name":"Internship","updated_at":"2013-06-17T09:26:03Z"},{"category_id":3,"created_at":"2013-06-17T09:26:03Z","id":12,"name":"Bees","updated_at":"2013-06-17T09:26:03Z"},{"category_id":4,"created_at":"2013-06-17T09:26:03Z","id":13,"name":"Marketing","updated_at":"2013-06-17T09:26:03Z"},{"category_id":4,"created_at":"2013-06-17T09:26:03Z","id":14,"name":"Networking","updated_at":"2013-06-17T09:26:03Z"},{"category_id":9,"created_at":"2013-06-17T09:26:04Z","id":15,"name":"Community","updated_at":"2013-09-28T22:16:48Z"},{"category_id":9,"created_at":"2013-06-17T09:26:04Z","id":16,"name":"Youth","updated_at":"2013-09-28T22:16:20Z"},{"category_id":4,"created_at":"2013-06-17T09:26:04Z","id":17,"name":"Beef","updated_at":"2013-06-17T09:26:04Z"},{"category_id":4,"created_at":"2013-06-17T09:26:04Z","id":18,"name":"Cows","updated_at":"2013-06-17T09:26:04Z"},{"category_id":9,"created_at":"2013-06-17T09:26:04Z","id":19,"name":"Cattle","updated_at":"2013-09-28T22:16:23Z"},{"category_id":7,"created_at":"2013-06-17T09:26:04Z","id":20,"name":"Livestock","updated_at":"2013-09-28T22:16:27Z"},{"category_id":10,"created_at":"2013-06-17T09:26:04Z","id":21,"name":"Fruit","updated_at":"2013-09-28T22:16:26Z"},{"category_id":9,"created_at":"2013-06-17T09:26:04Z","id":22,"name":"Farmers Market","updated_at":"2013-09-28T22:16:10Z"},{"category_id":4,"created_at":"2013-06-17T09:26:05Z","id":23,"name":"Organics","updated_at":"2013-06-17T09:26:05Z"},{"category_id":5,"created_at":"2013-06-17T09:26:05Z","id":24,"name":"First Nations","updated_at":"2013-06-17T09:26:05Z"},{"category_id":5,"created_at":"2013-06-17T09:26:05Z","id":25,"name":"Young Agrarians","updated_at":"2013-06-17T09:26:05Z"},{"category_id":6,"created_at":"2013-06-17T09:26:08Z","id":26,"name":"Work Subsidy","updated_at":"2013-06-17T09:26:08Z"},{"category_id":6,"created_at":"2013-06-17T09:26:08Z","id":27,"name":"Microfinance","updated_at":"2013-06-17T09:26:08Z"},{"category_id":6,"created_at":"2013-06-17T09:26:08Z","id":28,"name":"Loans","updated_at":"2013-06-17T09:26:08Z"},{"category_id":6,"created_at":"2013-06-17T09:26:09Z","id":29,"name":"Sector Development","updated_at":"2013-06-17T09:26:09Z"},{"category_id":6,"created_at":"2013-06-17T09:26:09Z","id":30,"name":"Grants","updated_at":"2013-06-17T09:26:09Z"},{"category_id":7,"created_at":"2013-06-17T09:26:10Z","id":31,"name":"Soil Amendments","updated_at":"2013-06-17T09:26:10Z"},{"category_id":7,"created_at":"2013-06-17T09:26:10Z","id":32,"name":"Soil Testing Lab","updated_at":"2013-06-17T09:26:10Z"},{"category_id":7,"created_at":"2013-06-17T09:26:11Z","id":33,"name":"Poultry","updated_at":"2013-06-17T09:26:11Z"},{"category_id":7,"created_at":"2013-06-17T09:26:12Z","id":34,"name":"Processors","updated_at":"2013-06-17T09:26:12Z"},{"category_id":7,"created_at":"2013-06-17T09:26:12Z","id":35,"name":"Grains","updated_at":"2013-06-17T09:26:12Z"},{"category_id":7,"created_at":"2013-06-17T09:26:12Z","id":36,"name":"Wool","updated_at":"2013-06-17T09:26:12Z"},{"category_id":7,"created_at":"2013-06-17T09:26:13Z","id":37,"name":"Slaughter Facility","updated_at":"2013-06-17T09:26:13Z"},{"category_id":7,"created_at":"2013-06-17T09:26:25Z","id":38,"name":"Feed Dealers","updated_at":"2013-06-17T09:26:25Z"},{"category_id":8,"created_at":"2013-06-17T09:26:30Z","id":39,"name":"Land Access","updated_at":"2013-06-17T09:26:30Z"},{"category_id":9,"created_at":"2013-06-17T09:26:31Z","id":40,"name":"Seed","updated_at":"2013-06-17T09:26:31Z"},{"category_id":9,"created_at":"2013-06-17T09:26:31Z","id":41,"name":"Business Resources","updated_at":"2013-06-17T09:26:31Z"},{"category_id":9,"created_at":"2013-06-17T09:26:31Z","id":42,"name":"Sheep","updated_at":"2013-06-17T09:26:31Z"},{"category_id":9,"created_at":"2013-06-17T09:26:32Z","id":43,"name":"Grain","updated_at":"2013-06-17T09:26:32Z"},{"category_id":9,"created_at":"2013-06-17T09:26:32Z","id":44,"name":"Tree Fruit","updated_at":"2013-06-17T09:26:32Z"},{"category_id":9,"created_at":"2013-06-17T09:26:32Z","id":45,"name":"Food Policy","updated_at":"2013-06-17T09:26:32Z"},{"category_id":9,"created_at":"2013-06-17T09:26:33Z","id":46,"name":"Start up support","updated_at":"2013-06-17T09:26:33Z"},{"category_id":9,"created_at":"2013-06-17T09:26:33Z","id":47,"name":"National","updated_at":"2013-06-17T09:26:33Z"},{"category_id":9,"created_at":"2013-06-17T09:26:34Z","id":48,"name":"Urban Agriculture","updated_at":"2013-06-17T09:26:34Z"},{"category_id":10,"created_at":"2013-06-17T09:26:35Z","id":49,"name":"Organic Sector","updated_at":"2013-06-17T09:26:35Z"},{"category_id":10,"created_at":"2013-06-17T09:26:35Z","id":50,"name":"Berries","updated_at":"2013-06-17T09:26:35Z"},{"category_id":10,"created_at":"2013-06-17T09:26:36Z","id":51,"name":"Farm","updated_at":"2013-06-17T09:26:36Z"},{"category_id":10,"created_at":"2013-06-17T09:26:36Z","id":52,"name":"Foodies","updated_at":"2013-06-17T09:26:36Z"},{"category_id":10,"created_at":"2013-06-17T09:26:36Z","id":53,"name":"Farm Sector","updated_at":"2013-06-17T09:26:36Z"},{"category_id":10,"created_at":"2013-06-17T09:26:36Z","id":54,"name":"Beef and Livestock","updated_at":"2013-06-17T09:26:36Z"},{"category_id":10,"created_at":"2013-06-17T09:26:37Z","id":55,"name":"Mushrooms","updated_at":"2013-06-17T09:26:37Z"},{"category_id":11,"created_at":"2013-06-17T09:26:37Z","id":56,"name":"Events","updated_at":"2013-06-17T09:26:37Z"},{"category_id":11,"created_at":"2013-06-17T09:26:38Z","id":57,"name":"Infrastructure","updated_at":"2013-06-17T09:26:38Z"},{"category_id":12,"created_at":"2013-06-17T09:26:40Z","id":58,"name":"Information","updated_at":"2013-06-17T09:26:40Z"},{"category_id":2,"created_at":"2013-07-26T20:00:06Z","id":59,"name":"Market","updated_at":"2013-07-26T20:00:06Z"},{"category_id":7,"created_at":"2014-01-03T22:36:04Z","id":61,"name":"Suppliers","updated_at":"2014-01-04T00:11:34Z"},{"category_id":7,"created_at":"2014-01-04T00:09:54Z","id":71,"name":"Equipment","updated_at":"2014-01-04T00:09:54Z"},{"category_id":3,"created_at":"2014-01-04T00:21:40Z","id":81,"name":"College","updated_at":"2014-01-04T00:21:40Z"},{"category_id":2,"created_at":"2014-01-04T00:29:56Z","id":91,"name":"Training","updated_at":"2014-01-04T00:29:56Z"},{"category_id":3,"created_at":"2014-01-04T00:39:01Z","id":101,"name":"Courses","updated_at":"2014-01-04T00:39:01Z"},{"category_id":9,"created_at":"2014-01-04T00:46:51Z","id":111,"name":"Agritourism","updated_at":"2014-01-04T00:46:51Z"},{"category_id":8,"created_at":"2014-01-04T00:48:43Z","id":121,"name":"Cooperative","updated_at":"2014-01-04T00:48:43Z"},{"category_id":9,"created_at":"2014-01-04T01:08:54Z","id":131,"name":"Agroforestry","updated_at":"2014-01-04T01:08:54Z"},{"category_id":null,"created_at":"2014-01-06T04:22:44Z","id":141,"name":"Land Access","updated_at":"2014-01-06T04:22:44Z"},{"category_id":null,"created_at":"2014-01-08T22:51:58Z","id":151,"name":"Permaculture","updated_at":"2014-01-08T22:51:58Z"},{"category_id":null,"created_at":"2014-01-22T06:28:02Z","id":161,"name":"Apprenticeships","updated_at":"2014-01-22T06:28:02Z"},{"category_id":null,"created_at":"2014-02-06T16:47:22Z","id":171,"name":"Biodynamic","updated_at":"2014-02-06T16:47:22Z"},{"category_id":null,"created_at":"2014-02-17T16:55:48Z","id":181,"name":"Web Resource","updated_at":"2014-02-17T16:55:48Z"},{"category_id":null,"created_at":"2014-04-01T22:11:49Z","id":191,"name":"Holistic Land Management","updated_at":"2014-04-01T22:11:49Z"},{"category_id":null,"created_at":"2014-04-01T22:11:50Z","id":201,"name":"Holistic Land Management","updated_at":"2014-04-01T22:11:50Z"},{"category_id":null,"created_at":"2014-04-09T22:53:23Z","id":211,"name":"WWOOF","updated_at":"2014-04-09T22:53:23Z"},{"category_id":null,"created_at":"2014-04-10T19:32:02Z","id":221,"name":"Certified Organic","updated_at":"2014-04-10T19:32:02Z"},{"category_id":null,"created_at":"2014-04-10T19:34:26Z","id":231,"name":"Urban Farm","updated_at":"2014-04-10T19:34:26Z"},{"category_id":null,"created_at":"2014-04-10T20:06:15Z","id":241,"name":"Range Management","updated_at":"2014-04-10T20:06:15Z"},{"category_id":null,"created_at":"2014-04-10T20:06:26Z","id":251,"name":"Horticulture","updated_at":"2014-04-10T20:06:26Z"},{"category_id":null,"created_at":"2014-04-22T23:06:07Z","id":261,"name":"Web Resource","updated_at":"2014-04-22T23:06:07Z"},{"category_id":null,"created_at":"2014-05-06T00:44:55Z","id":271,"name":"SPIN","updated_at":"2014-05-06T00:44:55Z"},{"category_id":null,"created_at":"2014-12-09T23:27:59Z","id":281,"name":"Permaculture","updated_at":"2014-12-09T23:27:59Z"},{"category_id":null,"created_at":"2015-02-16T04:46:41Z","id":291,"name":"Market Garden","updated_at":"2015-02-16T04:46:41Z"},{"category_id":null,"created_at":"2015-04-02T18:09:58Z","id":301,"name":"Dairy","updated_at":"2015-04-02T18:09:58Z"},{"category_id":null,"created_at":"2015-04-02T18:13:43Z","id":311,"name":"Nursery","updated_at":"2015-04-02T18:13:43Z"},{"category_id":null,"created_at":"2015-04-02T18:16:27Z","id":321,"name":"Co-op","updated_at":"2015-04-02T18:16:27Z"},{"category_id":null,"created_at":"2015-04-02T18:17:17Z","id":331,"name":"Tools","updated_at":"2015-04-02T18:17:17Z"},{"category_id":null,"created_at":"2015-04-02T18:18:56Z","id":341,"name":"Grants","updated_at":"2015-04-02T18:18:56Z"},{"category_id":null,"created_at":"2015-05-07T23:50:58Z","id":351,"name":"Jobs","updated_at":"2015-05-07T23:50:58Z"}];
+
+      _.defer(function(){
+          YA.start();
+      });
+    </script>
+    <div id="fb_img" data-img="http://maps.youngagrarians.org/assets/ya.jpg"></div>
+    <div id="app-modal" class="reveal-modal" data-reveal data-options="close_on_background_click: false;"></div>
+    <!-- <div class="reveal-modal-bg" style="display: none"></div> -->
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-44608495-1', 'maps.youngagrarians.org');
+      ga('send', 'pageview');
+
+    </script>
+    
+  </body>
+</html>

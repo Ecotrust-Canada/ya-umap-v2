@@ -1,0 +1,6 @@
+resources
+**/.DS_Store
+ya-mockup
+bower_components
+node_modules
+public/vendor/*

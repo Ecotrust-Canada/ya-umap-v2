@@ -1,0 +1,15 @@
+{
+  "name": "ya-frontend",
+  "version": "0.0.0",
+  "description": "This is a simple example with in-browser compilation.",
+  "main": "riot+compiler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "bower": "~1.7.9",
+    "restify": "^4.0.4"
+  }
+}

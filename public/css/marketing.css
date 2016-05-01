@@ -81,16 +81,7 @@ header .nav .nav-item a {
     font-size: 20px;
     color: white;
 }
-select {
-    border-radius: 0;
-    border: 1px solid black;
-    padding: 8px 8px 8px 40px;
-    position: relative;
-    font-size: 17px;
-    top: 1px;
-    left: -1px;
-    box-shadow: 0 3px 3px rgba(0,0,0,0.2);    
-}
+
 input.search-box {
     width: 460px;
     font-size: 17px;
@@ -100,10 +91,17 @@ input.search-box {
     box-shadow: 0 3px 3px rgba(0,0,0,0.2);
     background: url(../images/icon/search.png) 8px 8px no-repeat white;
 }
+input.search-box-map {
+  top: 25px;
+  left: 425px;
+  height: 35px;
+  margin: 0;
+  width: 276px;
+}
 
 /* overlays ----------------------- */
 
-button.submit, .layer-toggle, .results-search-form, .layer-panel, .listing-detail {
+button.submit, .toggle, .search-box-map, .panel, .listing-detail {
   position: absolute;
   z-index: 1000;
 }
@@ -125,16 +123,44 @@ button.submit {
 button.submit big {
   font-weight: bold;
 }
+.notification {
+  background-color: #188885;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  border-radius: 50%;
+  color: white;
+  top: 10px;
+  left: 18px;
+  line-height: 15px;
+  padding: 0;
+  text-align: center;
+  font-weight: bold;
+}
+.category-toggle .notification {
+  left: auto;
+  right: 26px;
+}
 
-.layer-toggle {
-  right: 25px; top: 25px; height: 35px; width: 60px;
-  background: url(../images/icon/layers.png) white no-repeat 6px 6px;
+.toggle {
   border: 1px solid black;
   cursor: pointer;
+  top: 25px; height: 35px;
 }
-.layer-toggle:after {
+.layer-toggle {
+  right: 25px;
+  width: 60px;
+  background: url(../images/icon/layers.png) white no-repeat 6px 6px;
+}
+.category-toggle {
+  left: 700px;
+  width: 130px;
+  background: white;
+  padding: 6px 0 0 6px;
+}
+.toggle:after {
   top: 40%;
-  left: 70%;
+  right: 10px;
   border: solid transparent;
   content: " ";
   height: 0;
@@ -148,10 +174,15 @@ button.submit big {
 }
 .layer-panel {
   right: 25px;
+}
+.category-panel {
+  left: 700px;
+}
+.panel {
   top: 60px;
   width: 200px;
 }
-.layer-panel li {
+.panel li {
   height: 50px;
   background-color: black;
   color: white;
@@ -162,12 +193,7 @@ button.submit big {
   margin: 0;
 }
 
-.results-search-form {
-  top: 25px;
-  left: 425px;
-  height: 0;
-  margin: 0;
-}
+
 
 .listing-detail {
   top: 10px; left: 50%; margin-left: -500px; width: 1000px; bottom: 10px;

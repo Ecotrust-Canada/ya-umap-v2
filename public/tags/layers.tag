@@ -1,12 +1,13 @@
 <layers>
 
-  <div class='layer-toggle' onclick={ toggle }>
-
+  <div class='layer-toggle toggle' onclick={ toggle }>
+    <div class='notification' if={ num_layers_showing() }>{ num_layers_showing() }</div>
   </div>
 
-  <ul class='layer-panel' if={ showing }>
-    <li class='layer' each={ wms_layers } onclick={ layer_on_off }>
-      { name } <span if={ map_has_layer(layer) } class='on'>&#x2714;</span>
+  <ul class='layer-panel panel' if={ showing }>
+    <li class='panel-item' each={ wms_layers } onclick={ layer_on_off }>
+      { name }
+      <span if={ map_has_layer(layer) } class='on'>&#x2714;</span>
     </li>
   </ul>
 
@@ -14,6 +15,12 @@
     , showing=false;
 
   controller.wms_layers = wms_layers;
+  
+  num_layers_showing(){
+    var num_showing = controller.wms_layers.filter(function(layer){ return map.hasLayer(layer.layer) }).length
+    console.log(num_showing);
+    return num_showing;
+  }
 
   toggle(){
     controller.showing = !controller.showing;

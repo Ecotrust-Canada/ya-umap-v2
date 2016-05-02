@@ -1,7 +1,7 @@
 
 <search>
 
-  <input placeholder="Enter keyword or location" name="q" class="search-box search-box-map" onkeyup={ onfilter }>
+  <input placeholder="Search: ie) bees, soil testing, etc." name="q" class="search-box search-box-map" onkeyup={ onfilter }>
 
   <div class='category-toggle toggle' onclick={ toggle }>
     <div class='notification' if={ num_cats_showing() }>{ num_cats_showing() }</div>

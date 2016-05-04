@@ -46,7 +46,7 @@ function slug(category){
   return category.name.toLowerCase().replace(/\s/,'-');
 }
 
-ajax().get('/locations').then(function(response){
+ajax().get('../js/locations.json').then(function(response){
   setTimeout(function(){
     response.forEach(function(listing){
       listing.dist = Math.abs((listing.latitude || 999) - 49.104430) + Math.abs((listing.longitude || 999) - -122.801094);

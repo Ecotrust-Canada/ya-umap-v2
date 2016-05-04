@@ -1,7 +1,7 @@
 
 var map = L.map('map', {
-  center: [49.505, -123],
-  zoom: 12,
+  center: [49.104430, -122.801094],
+  zoom: 11,
   zoomControl: false
 });
 
@@ -28,6 +28,18 @@ bounds = map.getBounds();
 url = "parks/within?lat1=" + bounds.getSouthWest().lat + "&lon1=" + bounds.getSouthWest().lng + "&lat2=" + bounds.getNorthEast().lat + "&lon2=" + bounds.getNorthEast().lng;  
 
 var geo;
+
+myStyle = {
+    fillColor: "#ffaa00",
+    color: "#000",
+    weight: 2,
+    opacity: 0.7,
+    fillOpacity: 0.1
+}
+
+ajax().get('../js/surrey_4326.json').then(function(response){
+  L.geoJson(response, {style:myStyle}).addTo(map);
+});
 
 
 function getSoil(e){

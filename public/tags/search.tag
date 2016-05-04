@@ -1,7 +1,7 @@
 
 <search>
 
-  <input placeholder="Search: ie) bees, soil testing, etc." name="q" class="search-box search-box-map" onkeyup={ onfilter }>
+  <input placeholder="Search: ie) Bees, Soil, etc." name="q" class="search-box search-box-map" onkeyup={ onfilter }>
 
   <div class='category-toggle toggle' onclick={ toggle }>
     <div class='notification' if={ num_cats_showing() }>{ num_cats_showing() }</div>
@@ -24,7 +24,6 @@
 
   num_cats_showing(){
     var num_cats = Object.keys(controller.categories).filter(function(cat){ return controller.categories[cat].showing; }).length;
-    console.log(num_cats);
     return num_cats;
   }
 
@@ -85,7 +84,6 @@
   
 
   function filter_listings(){
-
     category_cache = {};
     for(var cat in controller.categories) {
       if(controller.categories[cat].showing) controller.categories[cat].tags.forEach(function(tag){
@@ -107,7 +105,6 @@
         orig_listings[i].show = false;
       }
     }
-    console.log(query);
     opts.trigger('load', current_listings);
   }
 

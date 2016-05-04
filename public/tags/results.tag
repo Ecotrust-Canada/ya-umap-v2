@@ -28,10 +28,11 @@
 
   <!-- this script tag is optional -->
   <script>
+
     var controller = this;
     var category_cache = {};
 
-    this.items = opts.items
+    this.items = opts.items;
     
     view_on_map(e) {
       pubsub.trigger('zoom_to', e.item.marker)
@@ -42,12 +43,26 @@
     }
     
     opts.on('load', function(response){
+
+      response = response.sort(
+        function(x, y)
+        {
+
+          if ( x.dist > y.dist) {
+            return 1;
+          } else if (x.dist < y.dist) {
+            return -1
+          } else {
+            return 0;
+          }
+        }
+      );
+
       controller.update({
         items: response
       });
+
     });
-
-
 
   </script>
 

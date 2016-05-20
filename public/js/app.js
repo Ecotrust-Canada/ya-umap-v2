@@ -47,7 +47,12 @@ function slug(category){
 }
 
 ajax().get('../js/locations.json').then(function(response){
-  pubsub.trigger('initial_load', response);
+  setTimeout(function(){
+    response.forEach(function(listing){
+      listing.dist = Math.abs((listing.latitude || 999) - 49.104430) + Math.abs((listing.longitude || 999) - -122.801094);
+    })
+    pubsub.trigger('initial_load', response);
+  })
 });
 
 // the get-info button.

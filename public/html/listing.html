@@ -28,75 +28,360 @@
     </header>
 
     <div class="listing-edit">
-        <ul class="tabs">
-            <li>Categories</li>
-            <li>Login</li>
-            <li>Description</li>
-            <li>Contact</li>
-        </ul>
 
-        <!-- The above form looks like this -->
+      <ul class="tabs">
+          <li onclick="switchTab(event, 'Categories')">Categories</li>
+          <li onclick="switchTab(event, 'Log In')">Log In</li>
+          <li onclick="switchTab(event, 'Description')" class="active">Description</li>
+          <li onclick="switchTab(event, 'Contact')">Contact</li>
+      </ul>
+
+      <content data-for="Categories" style="display:none">
+
         <form>
-          <h3>Manage Your Listings</h3>
+          <h3>What kind of listing is this?</h3>
           <div class="row">
-            <div class="two columns">
-              <label for="address">Address</label>
+            <div class="six columns" style='padding: 0 70px'>
+              <h4>META</h4>
+              <input type="checkbox"> Description<br>
+              <input type="checkbox"> Description<br>
+              <input type="checkbox"> Description<br>
+              <h4>META</h4>
+              <input type="checkbox"> Description<br>
+              <input type="checkbox"> Description<br>
+              <input type="checkbox"> Description<br>
+              <h4>META</h4>
+              <input type="checkbox"> Description<br>
+              <input type="checkbox"> Description<br>
+              <input type="checkbox"> Description<br>
             </div>
+            <div class="six columns" style='padding: 0 70px'>
+              <h4>META</h4>
+              <input type="checkbox"> Description<br>
+              <input type="checkbox"> Description<br>
+              <input type="checkbox"> Description<br>
+              <h4>META</h4>
+              <input type="checkbox"> Description<br>
+              <input type="checkbox"> Description<br>
+              <input type="checkbox"> Description<br>
+              <h4>META</h4>
+              <input type="checkbox"> Description<br>
+              <input type="checkbox"> Description<br>
+              <input type="checkbox"> Description<br>
+            </div>
+          </div>
+        </form>
+
+        <div class="btnbar">
+          <div class="row" style='padding-top:20px'>
             <div class="four columns">
-              <input type="text" class="u-full-width" name="address1" placeholder="address line 1">
-              <input type="text" class="u-full-width" name="address2" placeholder="address line 2">
+              <button class="btn btn-muted" type="submit">Cancel</button>
+            </div>
+            <div class="three columns" style='text-align: right'>
+              <button class="btn btn-primary" type="submit">Next &gt;</button>
+            </div>
+
+          </div>
+        </div>
+
+      </content>
+
+      <content data-for="Log In" style="display:none">
+        <form>
+          <h3>Log In</h3>
+          <div class="row">
+            <div class="six columns" style='padding: 30px 30px 0 30px; border-right: 1px solid #888'>
+              <h4 style='margin-bottom:30px'>Create an account</h4>
               <div class="row">
-                <input type="text" class="five columns" placeholder="city" name="city">
-                <input type="text" class="three columns" placeholder="province" name="province">
-                <input type="text" class="four columns" placeholder="country" name="country">
+                <div class="three columns">
+                  <label>Email</label>
+                </div>
+                <div class="nine columns">
+                  <input type="email">
+                </div>
+              </div>
+              <div class="row">
+                <div class="three columns">
+                  <label>Password</label>
+                </div>
+                <div class="nine columns">
+                  <input type="password">
+                </div>
+              </div>
+              <p style='text-align:center'>
+                <button class='btn btn-primary btn-small'>Create</button>
+              </p>
+            </div>
+            <div class="six columns" style='padding: 30px 30px 0 30px'>
+              <h4 style='margin-bottom:30px'>Log in to your account</h4>
+              <div class="row">
+                <div class="three columns">
+                  <label>Email</label>
+                </div>
+                <div class="nine columns">
+                  <input type="email">
+                </div>
+              </div>
+              <div class="row">
+                <div class="three columns">
+                  <label>Password</label>
+                </div>
+                <div class="nine columns">
+                  <input type="password">
+                </div>
+              </div>
+              <p style='text-align:center'>
+                <button class='btn btn-primary btn-small'>Log in</button>
+              </p>
+            </div>
+          </div>
+          <div style="text-align: center; margin-top: 25px">
+            <h4>No account needed</h4>
+            <p>No thanks, I won't need to<br>manage my listing in the future.</p>
+          </div>
+        </form>
+        <div class="btnbar">
+          <div class="row" style='padding-top:20px'>
+            <div class="four columns">
+              <button class="btn btn-muted" type="submit">Cancel</button>
+            </div>
+            <div class="three columns" style='text-align: right'>
+              <button class="btn btn-primary btn-small" type="submit">Submit</button>
+            </div>
+          </div>
+        </div>
+      </content>
+
+
+      <content data-for="Description">
+        <form>
+          <h3>Description</h3>
+
+
+          <div class="row row-fieldset">
+            <div class="three columns">
+              <label>Listing Name<span class='required'>*</span></label>
+            </div>
+            <div class="six columns">
+              <input type="text" class="u-full-width" name="title">
+            </div>
+          </div>
+          
+          <div class="row row-fieldset">
+            <div class="three columns">
+              <label>Tags</label>
+            </div>
+            <div class="six columns">
+              <div class="tags" id="tags" style='height: 50px'></div>
+            </div>
+          </div>
+
+          <div class="row row-fieldset">
+            <div class="three columns">
+              <label>About the Listing<span class='required'>*</span></label>
+            </div>
+            <div class="six columns">
+              <textarea name="description"
+              placeholder="In 2-5 sentences, why would a new or young farmer want to know about this resource?"
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="seven columns">&nbsp;</div>
+            <div class="five columns"><span class='required'>*</span> required fields.</div>
+          </div>
+
+        </form>
+        <div class="btnbar">
+          <div class="row" style='padding-top:20px'>
+            <div class="three columns">
+              <button class="btn btn-muted" type="submit">Cancel</button>
+            </div>
+            <div class="nine columns">
+              <button class="btn btn-primary" style='text-align: right' type="submit">&lt; Previous</button>
+              <button class="btn btn-primary" style='text-align: right' type="submit">Next &gt;</button>
+            </div>
+
+          </div>
+        </div>
+      </content>
+
+
+      <content data-for="Contact" style='display:none'>
+        <form>
+          <h3>Contact Info</h3>
+          <div class="row">
+            <div class="six columns" style='padding-right: 30px'>
+
+              <div class="row row-fieldset">
+                <div class="three columns">
+                  <label>Address</label>
+                </div>
+                <div class="nine columns">
+                  <input type="text" class="u-full-width" name="address1" placeholder="address line 1">
+                  <input type="text" class="u-full-width" name="address2" placeholder="address line 2">
+                  <div class="row">
+                    <input type="text" class="five columns" placeholder="city" name="city">
+                    <input type="text" class="three columns" placeholder="province" name="province">
+                    <input type="text" class="four columns" placeholder="country" name="country">
+                  </div>
+                </div>
+              </div>
+              
+              <div class="row row-fieldset">
+                <div class="three columns">
+                  <label>Phone</label>
+                </div>
+                <div class="nine columns">
+                    <div class='row'>
+                      <input type="text" name="phone" class="two columns" placeholder="area code">
+                      <input type="text" name="phone" class="three columns">
+                      <input type="text" name="phone" class="four columns">
+                    </div>
+                </div>
+              </div>
+
+              <div class="row row-fieldset">
+                <div class="three columns">
+                  <label>Website</label>
+                </div>
+                <div class="nine columns">
+                  <input type="text" class="u-full-width" name="website">
+                </div>
+              </div>
+              
+              <div class="row row-fieldset">
+                <div class="three columns">
+                  <label>Email</label>
+                </div>
+                <div class="nine columns">
+                  <input type="text" class="u-full-width" name="facebook">
+                </div>
+              </div>
+
+              <div class="row row-fieldset">
+                <div class="three columns">
+                  <label>Facebook</label>
+                </div>
+                <div class="nine columns">
+                  <input type="text" class="u-full-width" name="facebook">
+                </div>
+              </div>
+
+              <div class="row row-fieldset">
+                <div class="three columns">
+                  <label>Twitter</label>
+                </div>
+                <div class="nine columns">
+                  <input type="text" class="u-full-width" name="twitter">
+                </div>
+              </div>
+
+            </div>
+            <div class="six columns" style='padding-right: 30px'>
+              <p><big>Can we display the contact info on the U-Map?</big> <span class='required'>*</span></p>
+              <div class="row">
+                <div class="one columns">
+                  <input type="radio" name="is_public" value="true">
+                </div>
+                <div class="eleven columns">
+                  Yes! Please share these details publicly.
+                </div>
+              </div>
+              <div class="row">
+                <div class="one columns">
+                  <input type="radio" name="is_public" value="false">
+                </div>
+                <div class="eleven columns">
+                  No, I prefer that people contact me privately through Young Agrarians <span class='required'>(account required)</span>.
+                </div>
+              </div>
+              <div class="row" style='margin-top:2em'>
+                <div class="three columns">
+                  <big>Show&nbsp;Until</big>
+                </div>
+                <div class="nine columns">
+                  <input type="date">
+                  <br>
+                  <small>Leave blank to show the listing permanently.</small>
+                </div>
+              </div>
+              <div class="row" style='margin-top:2.5em'>
+                <div class="seven columns">&nbsp;</div>
+                <div class="five columns"><span class='required'>*</span> required fields.</div>
               </div>
             </div>
           </div>
-          
-          <div class="row">
-            <div class="two columns">Phone</div>
-            <div class="four columns">
-                <div class='row'>
-                  <input type="text" name="phone" class="two columns" placeholder="area code">
-                  <input type="text" name="phone" class="three columns">
-                  <input type="text" name="phone" class="four columns">
-                </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="two columns">Website</div>
-            <div class="four columns">
-              <input type="text" class="u-full-width" name="website">
-            </div>
-          </div>
-          
-          <div class="row">
-            <div class="two columns">Email</div>
-            <div class="four columns">
-              <input type="text" class="u-full-width" name="facebook">
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="two columns">Facebook</div>
-            <div class="four columns">
-              <input type="text" class="u-full-width" name="facebook">
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="two columns">Twitter</div>
-            <div class="four columns">
-              <input type="text" class="u-full-width" name="twitter">
-            </div>
-          </div>
-
-          <input class="button-primary" type="submit" value="Submit">
         </form>
+        <div class="btnbar">
+          <div class="row" style='padding-top:20px'>
+            <div class="four columns">
+              <button class="btn btn-muted" type="submit">Cancel</button>
+            </div>
+            <div class="three columns">
+              <button class="btn btn-primary" style='text-align: right' type="submit">Submit</button>
+            </div>
+            <div class="five columns" style='margin-left: 0'>
+              <p class='aside'><small>
+                By clicking submit, I agree the information I am providing is true and correct.
+              </small></p>
+            </div>
+          </div>
+        </div>
+      </content>
+
 
     </div>
 
+    <script>
+
+      window.switchTab = function(event, which){
+
+        // clear active tabs.
+        Array.prototype.slice.apply(document.querySelectorAll('.active')).forEach(function(el){
+          el.className='';
+        });
+        event.target.className = 'active';
+        Array.prototype.slice.apply(document.querySelectorAll('content')).forEach(function(el){
+          if (el.getAttribute('data-for') === which) {
+            el.style.display = 'block';
+          } else {
+            el.style.display = 'none';
+          }
+        });
+      }
+
+      riot.tag('multi-select', selectTag.value, function(opts) {
+        
+        this.selections = opts.selections.sort(function(a,b) {return a.name > b.name});
+        this.selected = [];
+        this.showing = false;
+        self = this;
+        
+        this.remove = function(e) {
+          this._swap(e.item, this.selected, this.selections);
+          this.selections.sort(function(a,b) {return a.name > b.name});
+
+        }.bind(this);
+
+        this.select = function(e) {
+          this._swap(e.item, this.selections, this.selected);
+        }.bind(this);
+        
+        this.show = function(e) {
+          this.showing = !this.showing;
+        }.bind(this);
+        
+        this._swap = function(item, src, dest) {
+          dest.push(item);
+          src.splice(src.indexOf(item), 1);
+          this.showing = false;
+        };
+        
+      });
+
+    </script>
 </body>
 
 </html>

@@ -5,7 +5,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  font-family: "Sofia Pro", courier, sans-serif;
+  font-family: "Sofia Pro", Arial, Helvetica, sans-serif;
   margin:0; padding:0;
 }
 
@@ -82,12 +82,22 @@ header .nav .nav-item a {
     color: white;
 }
 
-input[type="text"] {
-    border-radius: 0;
-    border: 1px solid black;
-    padding: 4px;
+input[type="text"], input[type="date"], input[type="email"], input[type="password"] {
     height: auto;
-    margin: 0 4px 8px 0;
+}
+input[type="text"], input[type="date"], input[type="email"], input[type="password"], textarea, .tags {
+    border-radius: 0;
+    border: 1px solid #888;
+    background-color: #f8f8f8;
+    padding: 5px;
+    margin: 0 4px 4px 0;
+}
+textarea {
+  display: block;
+  width: 100%;
+  height: 12em;
+  padding: 1em;
+  font-family: 'Sofia Pro';
 }
 
 input.search-box {
@@ -103,6 +113,10 @@ input.search-box-map {
   height: 35px;
   margin: 0;
   width: 276px;
+}
+
+textarea {
+
 }
 
 /* overlays ----------------------- */
@@ -553,22 +567,142 @@ ul.results-list li .listing-icon {
 /*
 Listing CRUD page.
 */
+.listing-edit form {
+  padding: 0 0 0 20px;
+}
 .listing-edit {
   position: absolute;
   background-color: white;
-  top: 100px;
-  left: 100px;
-  right: 100px;
-  height: 500px;
-  padding: 15px;
+  top: 200px;
+  left: 50%;
+  width: 800px;
+  height: 550px;
+  margin-left: -400px;
 }
 .tabs {
+  background: url(../images/umap-text.png) 15px 15px no-repeat #ce4d1b;
+  background-size: 155px;
   list-style: none;
-  margin: 0 0 0 150px;
+  padding: 0 0 0 250px;
+  margin: 0;
 }
 .tabs li {
   display: inline-block;
-  padding: 25px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  padding: 20px;
+  margin: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: white;
+  font-size: 17px;
 }
+.tabs li.active {
+  background: white;
+  color: black;
+}
+.listing-edit .row-fieldset {
+  padding-top: 11px;
+}
+.listing-edit h3 {
+  margin: 10px 0 0 0;
+  font-size: 38px;
+  font-family: 'Young Agrarians';
+}
+.listing-edit h4 {
+  margin: 10px 0 0 0;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 28px;
+  font-family: "Young Agrarians";
+}
+.listing-edit .btnbar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 96px;
+  padding: 20px;
+}
+.listing-edit .btn {
+  font-family: 'Sofia Pro';
+  color: white;
+  border: 0px none transparent;
+  border-radius: 0;
+  text-transform: none;
+  font-size: 15px;
+  font-weight: normal;
+}
+.listing-edit .btn-primary {
+  background: #ce4d1b;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+.listing-edit .btn-muted {
+  background: #bcbab9;
+}
+.listing-edit .btn-small {
+  padding: 0 20px 0 20px;
+  line-height: 30px;
+  height: 30px;
+}
+input[type="checkbox"],
+input[type="radio"] {
+ -webkit-appearance:none;/* Hides the default checkbox style */ 
+ height:1.3em;
+ width:1.3em;
+ margin: 0;
+ cursor: pointer;
+ position:relative;
+ display: inline-block;
+ background-color: #f8f8f8;
+ border: 1px solid #888;
+ vertical-align: middle;
+}
+
+input[type="checkbox"]:before, input[type="checkbox"]:checked:before,
+input[type="radio"]:before, input[type="radio"]:checked:before {
+ position:absolute;
+ top:0;
+ left:0;
+ width:100%;
+ height:100%;
+ line-height:1em;
+ font-size: 1.5em;
+ text-align:center;
+ color:black;
+ content: '';
+}
+
+input[type="checkbox"]:checked:before,
+input[type="radio"]:checked:before {
+ content: '';
+ left: 10%;
+ top: 10%;
+ position: absolute;
+ width: 80%;
+ height: 80%;
+ display: block;
+ background-color: #ce4d1b;
+}
+
+
+.required {
+  color: #ce4d1b;
+}
+.listing-edit p.aside {
+  line-height: 17px;
+}
+.listing-edit big {
+  font-size: 17px;
+}
+.listing-edit label {
+  font-size: 17px;
+  font-weight: normal;
+}
+
+input.taggle_input {
+  border: 0px none transparent;
+  padding: 0;
+  margin: 0;
+  line-height: 30px;
+}
+
